@@ -87,8 +87,7 @@ Once registered and part of this course's organization, navigate to **Create Env
   <img src="./images/rm_gitpodflex_02.png" width="400" class="center">
 </p>
 
-  - Create a new environment and connect with 
-  the course's repository `<CHANGE>`.
+  - Create a new environment and connect with the course's repository `https://github.com/theiagen/Northeast-SDP4PHB-2025`.
 
 <p align="center">
   <img src="./images/rm_gitpodflex_03.png" width="400" class="center">
