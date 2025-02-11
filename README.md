@@ -1,5 +1,5 @@
 # Software Development Practices for Public Health Bioinformatics
-A `<CHANGE>` Offering Provided by the `<CHANGE>` in Collaboration with Theiagen Genomics
+A Northeastern Bioinformatics Regional Resource Offering Provided by the Massachusetts Department of Public Health in Collaboration with Theiagen Genomics
 
 ## Content
 - [Overview](#overview) 
@@ -10,7 +10,7 @@ A `<CHANGE>` Offering Provided by the `<CHANGE>` in Collaboration with Theiagen 
 - [Prerequisites for Hands-On Exercises](#prerequisites-for-hands-on-exercises)
 
 ## Overview 
-The  `<CHANGE>`, in collaboration with Theiagen Genomics, will be hosting a Software Development Practices for Public Health Bioinformatics Course. This will be a virtual workshop hosted on `<CHANGE>` and `<CHANGE>` via Zoom from **`<CHANGE>`**. All training materials will be hosted on this GitHub page to encourage self-paced and asynchronous learning. 
+The  Massachusetts Department of Public Health, in collaboration with Theiagen Genomics, will be hosting a Software Development Practices for Public Health Bioinformatics Course. This will be a virtual workshop hosted on Mondays and Wednesdays via Zoom from **February 24th - March 19st, 2025**. All training materials will be hosted on this GitHub page to encourage self-paced and asynchronous learning. 
 
 ### Training Objectives
 - Knowledge of best software development practices applied to public health bioinformatics such as design documents and the use of integrated development environments 
@@ -24,9 +24,9 @@ This course is designed for bioinformatics scientists interested in strengthenin
 Participants should have a strong background in bioinformatics, specifically accessing open-source tools through a command-line interface, running bioinformatics pipelines, and proficiency in at least one scripting language (e.g. Python, Perl, or BASH).  Participants should also have a [GitHub account](https://github.com/signup) (or an ability to create one) and [Visual Studio Code](https://code.visualstudio.com) installed in their system. This training is most beneficial for those with access to a Linux environment within their host institution.
 
 ### Course Format 
-This will be a 4-week training series occurring on `<CHANGE>` and `<CHANGE>` from `<CHANGE>`: 
-- `<CHANGE>` (90 min): Lecture material with hands-on exercises
-- `<CHANGE>` (60 min): "Office hours" style meeting where participants can ask any questions about the material, and the trainers will address any errors encountered by participants.
+This will be a 4-week training series occurring on Monday and Wednesday from February 24th - March 19st, 2025: 
+- Monday (90 min): Lecture material with hands-on exercises
+- Wednesday (60 min): "Office hours" style meeting where participants can ask any questions about the material, and the trainers will address any errors encountered by participants.
 
 All lecture content will be recorded and made available through this GitHub repository to facilitate self-paced and asynchronous learning.
 
