@@ -5,7 +5,7 @@
 1. Access your dev environment through GitPod:
     - Navigate to https://app.gitpod.io/
         - If needed, select "Continue with GitHub", authorize Gitpod to access your GitHub account, and sign in with your credentials
-    - In the `<COHORT>`-SDP4PHB-`<YEAR>` organization, select the existing environment at the bottom of the right-side column
+    - In the Northeast-SDP4PHB-2025 the existing environment at the bottom of the right-side column
     - Restart the environment
     - Click on the "Open with VS Code" button
 
