@@ -52,7 +52,7 @@ source ~/.bashrc
 If everything was successful, you should now have `(base)` at the start of your command line:
 
 ```{bash}
-(base) vscode ➜ /workspaces/<COHORT>-SDP4PHB-<YEAR> (main) $  
+(base) vscode ➜ /workspaces/Northeast-SDP4PHB-2025 (main) $  
 ```
 
 ---
@@ -99,14 +99,14 @@ conda activate nextflow
 nextflow -version
 
       N E X T F L O W
-      version 24.10.3 build 5933
+      version 24.10.4 build 5933
       created 16-12-2024 15:34 UTC (15:34 GMT)
       cite doi:10.1038/nbt.3820
       http://nextflow.io
 
 ```
 
-Based on this, Nextflow v22.04.0 was installed in my `nextflow` environment. You can see the release notes at [v24.10.3](https://github.com/nextflow-io/nextflow/releases/tag/v24.10.3).
+Based on this, Nextflow v24.10.4 was installed in my `nextflow` environment. You can see the release notes at [v24.10.4](https://github.com/nextflow-io/nextflow/releases/tag/v24.10.4).
 
 ## Execute "Hello World"
 
