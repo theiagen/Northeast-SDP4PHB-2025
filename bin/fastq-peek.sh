@@ -20,9 +20,16 @@ fi
 echo "Processing FASTQ file: $FASTQ_FILE"
 
 # Count number of reads in FASTQ file
-## Count the number of lines in the FASTQ file
-LINE_COUNT=$(wc -l < "$FASTQ_FILE")
-## Calculate the number of reads (4 lines per read)
-READ_COUNT=$((LINE_COUNT / 4))
+LINE_COUNT=$(awk "NR % 4 == 2" ${1} | wc -l)
 
-echo "Number of reads in $FASTQ_FILE: $READ_COUNT"
+# count the non-ATCG bases
+TOTAL_BASE_COUNT=$(awk "NR % 4 == 2" ORS="" ${1} | tr -d "Nn" | wc -c)
+
+# get the GC count
+GC=$(awk "NR % 4 == 2" ORS="" ${1} | tr -dc "GgCc" | wc -c)
+
+# then as a percentage
+# this doesnt actually work because there is no bc in the venv
+GC_PERCENT=$(echo "scale=2; ${GC} / ${TOTAL_BASE_COUNT} * 100" | bc)
+
+echo "In sample, ${1}, there are ${LINE_COUNT} reads with ${TOTAL_BASE_COUNT} bases with a GC content in ${GC_PERCENT}%"
