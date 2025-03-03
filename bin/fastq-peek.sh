@@ -32,4 +32,6 @@ TOTAL_BASE_COUNT=$(sed -n '2~4p' $FASTQ_FILE | tr -cd 'ATCGatcg' | wc -c)
 GC_PERCENT=$(awk "BEGIN {print ($GC_COUNT / $TOTAL_BASE_COUNT) * 100}")
 
 echo "Number of reads in $FASTQ_FILE: $READ_COUNT"
-echo "GC percent in $FASTQ_FILE: $GC_PERCENT"
+echo "GC Count: $GC_COUNT"
+echo "Total number of bases: $TOTAL_BASE_COUNT"
+echo "GC Percent: $GC_PERCENT%"
