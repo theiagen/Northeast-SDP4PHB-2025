@@ -26,3 +26,12 @@ LINE_COUNT=$(wc -l < "$FASTQ_FILE")
 READ_COUNT=$((LINE_COUNT / 4))
 
 echo "Number of reads in $FASTQ_FILE: $READ_COUNT"
+
+# Count Nucleaotides 
+TOTAL_COUNT=$(grep -E '[ATGCN]+$' | tr -cd 'ATGCatgc' | wc -c)
+# Count GC only
+GC_COUNT=$(grep -E '[ATGCN]+$' | tr -cd 'GCgc' | wc -c)
+# Calculate GC PErcent
+GC_CONTENT=#(awk "BEGIN {print ($GC_COUNT/ $TOTAL_COUNT) * 100}")
+
+echo "GC content in $FASTQ_FILE: $GC_CONTENT"
