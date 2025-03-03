@@ -34,4 +34,4 @@ GC_PERCENT=$(awk "BEGIN {print ($GC_COUNT / $TOTAL_BASE_COUNT) * 100}")
 echo "Number of reads in $FASTQ_FILE: $READ_COUNT"
 echo "GC Count: $GC_COUNT"
 echo "Total number of bases: $TOTAL_BASE_COUNT"
-echo "GC Percent: $GC_PERCENT%"
+echo "GC Percent : $GC_PERCENT%"
