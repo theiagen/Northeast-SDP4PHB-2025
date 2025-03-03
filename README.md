@@ -43,8 +43,8 @@ All lecture content will be recorded and made available through this GitHub repo
 - [Exercise 01: Design Doc, Dev Environment, and Scripting with VSCode](./exercises/exercise01.md)
 
 **Week 02: Git Fundamentals and Making Source Code Modifications**
-- [Lecture Slides]()
-- [Recording]()
+- [Lecture Slides](./slides/Week%202%20Lecture%20-%20Northeast%20WFD%20Training%20Workshop_%20Dev%20Practices%20%2B%20Git.pdf)
+- [Recording](https://youtu.be/5wrY-Zs1D2Q)
 - [Exercise 02: Version Control with Git](./exercises/exercise02.md)
 
 **Week 03: Bringing Changes into Production**
@@ -52,7 +52,7 @@ All lecture content will be recorded and made available through this GitHub repo
 - [Recording]()
 - [Exercise 03: GitHub Actions & Static Releases](./exercises/exercise03.md)
   
-**Week 04: Getting started with Nextflow**
+**Week 04: Getting Started with Nextflow**
 - [Lecture Slides]()
 - [Recording]()
 - [Exercise 04: Writing Your First Nextflow Workflow](./exercises/exercise04.md)
@@ -72,7 +72,7 @@ Visual Studio Code, commonly referred to as VS Code, is an Integrated Developmen
 - Navigate to https://app.gitpod.io/
 - Select "Continue with GitHub", authorize Gitpod to access your GitHub account, and sign in with your credentials
 
-#### Creating your own ograzination
+#### Creating your own organisation
 Once your account is connected to GitPod, it will prompt you to create an organization. Unfortunately this step cannot be skipped. You create an organization with whatever name you wish, this will not matter once you are invited to this course's organization. 
   - Note that the organization name will depend on the  cohort and year of the course you are attending, matching this repository name.  
 
