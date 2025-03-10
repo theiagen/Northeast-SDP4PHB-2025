@@ -48,7 +48,7 @@ All lecture content will be recorded and made available through this GitHub repo
 - [Exercise 02: Version Control with Git](./exercises/exercise02.md)
 
 **Week 03: Bringing Changes into Production**
-- [Lecture Slides]()
+- [Lecture Slides](./slides/Week%203%20Lecture%20-%20Northeast%20WFD%20Training%20Workshop_%20Brining%20Changes%20into%20Production.pdf)
 - [Recording](https://youtu.be/MZ9NgxMgFYY)
 - [Exercise 03: GitHub Actions & Static Releases](./exercises/exercise03.md)
   
