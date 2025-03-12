@@ -26,3 +26,14 @@ LINE_COUNT=$(wc -l < "$FASTQ_FILE")
 READ_COUNT=$((LINE_COUNT / 4))
 
 echo "Number of reads in $FASTQ_FILE: $READ_COUNT"
+
+# Count number of GC and total residues
+GC=$(grep -o [GC] $FASTQ_FILE | wc -l)
+
+TOTAL=$(grep -o [ATCG] $FASTQ_FILE | wc -l)
+
+# Calculate GC percentage
+PERCENT=$(awk -v x=$GC -v y=$TOTAL 'BEGIN {print x/y * 100 } ')
+
+# Print user friendly output to console
+echo "There are $GC GC residues in $FASTQ_FILE, comprising $PERCENT% of the sequence"
