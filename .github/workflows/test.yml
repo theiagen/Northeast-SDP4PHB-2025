@@ -5,41 +5,55 @@ on:
     branches:
       - main  # Trigger the workflow on pull requests to the main branch
 
-jobs:  # Define jobs for the workflow
-  verify-fqp-output:  # Job name
-    runs-on: ubuntu-latest  # Specify the environment to run the job
+jobs:
+  verify-fqp-output:
+    runs-on: ubuntu-latest
 
-    steps:  # Steps to execute in the job
-      - name: Checkout code  # Step to checkout the repository code
-        uses: actions/checkout@v2  # Use the checkout action
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
 
-      - name: Make script executable  # Step to make the script executable
-        run: chmod +x ./bin/fastq-peek.sh  # Change permissions to make the script executable
+      - name: Make script executable
+        run: chmod +x ./bin/fastq-peek.sh
 
-      - name: Run fastq-peek script  # Step to run the script
-        id: run_script  # ID for referencing this step
-        run: ./bin/fastq-peek.sh ./data/sample.fastq  # Command to run the script with the sample FASTQ file
+      - name: Run fastq-peek script (Basic Test - No GC Content)
+        id: run_script
+        run: ./bin/fastq-peek.sh ./data/sample.fastq > actual_output.txt
 
-      - name: Verify output  # Step to verify the output
+      - name: Verify output (Basic Test)
         run: |
-          # Save the expected output to a file
           echo "Processing FASTQ file: ./data/sample.fastq" > expected_output.txt
           echo "Number of reads in ./data/sample.fastq: 2" >> expected_output.txt
-          echo "GC content in ./data/sample.fastq: 50%" >> expected_output.txt
           
-          # Capture the actual output of the script and save it to a file
-          ./bin/fastq-peek.sh ./data/sample.fastq > actual_output.txt
-
-          # Print expected and actual outputs for debugging
           echo "Expected Output:"
           cat expected_output.txt
           echo "Actual Output:"
           cat actual_output.txt
 
-          # Compare actual output with expected output
           if ! diff -q expected_output.txt actual_output.txt; then
             echo "Output did not match expected result."
             diff expected_output.txt actual_output.txt
             exit 1
           fi
-        shell: bash
+
+      - name: Run fastq-peek script (With GC Content)
+        id: run_script_gc
+        run: ./bin/fastq-peek.sh --gc-content ./data/sample.fastq > actual_output_gc.txt
+
+      - name: Verify output (With GC Content)
+        run: |
+          echo "Processing FASTQ file: ./data/sample.fastq" > expected_output_gc.txt
+          echo "Number of reads in ./data/sample.fastq: 2" >> expected_output_gc.txt
+          echo "GC content in ./data/sample.fastq: 50%" >> expected_output_gc.txt
+          
+          echo "Expected Output (With GC):"
+          cat expected_output_gc.txt
+          echo "Actual Output (With GC):"
+          cat actual_output_gc.txt
+
+          if ! diff -q expected_output_gc.txt actual_output_gc.txt; then
+            echo "Output did not match expected result."
+            diff expected_output_gc.txt actual_output_gc.txt
+            exit 1
+          fi
+
