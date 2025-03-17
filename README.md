@@ -53,8 +53,8 @@ All lecture content will be recorded and made available through this GitHub repo
 - [Exercise 03: GitHub Actions & Static Releases](./exercises/exercise03.md)
   
 **Week 04: Getting Started with Nextflow**
-- [Lecture Slides]()
-- [Recording]()
+- [Lecture Slides](./slides/Week%204%20Lecture%20-%20Northeast%20WFD%20Training%20Workshop_%20Workflow%20Managers%20and%20Nextflow.pdf)
+- [Recording](https://youtu.be/HabUd75DyCk)
 - [Exercise 04: Writing Your First Nextflow Workflow](./exercises/exercise04.md)
 
 ## Prerequisites for Hands-On Exercises
